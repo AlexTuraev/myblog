@@ -1,7 +1,10 @@
 package org.appblog;
 
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
     }
 }
